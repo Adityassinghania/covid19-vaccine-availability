@@ -225,12 +225,12 @@ function App() {
       </div>
       <Container className="bg-white pt-2 rounded">
       <div className="row">
-        <div className="col-5">
+        <div className="col-lg-5 col-sm-12">
           <p>This tracker will check the vaccine availability every 30 mins for the entire week. Simply select your state and district similar to CoWin platform and click start!</p>
           {paramForm()}
           {errorMessage()}
         </div>
-          <div className="col-7 result">            
+          <div className="col-lg-7 col-sm-12 result">            
           {filterCenters()}
           {result &&(
             <div className="alert alert-danger">
