@@ -1,4 +1,5 @@
 import Form from 'react-bootstrap/Form'
+import { IoLogoLinkedin,IoAddCircle,IoHeartCircle,IoPhonePortraitOutline } from "react-icons/io5";
 import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container';
 import useSound from 'use-sound'
@@ -9,7 +10,6 @@ import { getDistricts, getStates, getCenter } from './apicalls';
 import moment from 'moment'
 
 function App() {
-
   const [request, setRequest] = useState({
     districtId:"",
     date:moment().format("DD-MM-YY"),
@@ -240,6 +240,18 @@ function App() {
           </div>
       </div>         
     </Container>
+    <footer className="fixed-bottom bg-warning p-1 text-center">
+      <div className="row">
+      <div className="col-lg-6 col-sm-12 text-right">
+      <a href="https://www.cowin.gov.in/home" target="_blank" block className="btn btn-outline-danger"><IoAddCircle color="yellow" size="45"/> Go to Cowin</a>
+      </div>
+      <div className="col-lg-6 col-sm-12 text-left">
+        <h5>Aditya Singhania</h5>
+        <a href="http://www.linkedin.com/in/aditya-singhania-604681119" target="_blank"><IoLogoLinkedin color="#0e76a8" size="45"/></a>        
+      </div>
+      </div>
+      
+    </footer>
     </div>
   );
 }
