@@ -59,6 +59,7 @@ function App() {
   }
 
   const getCenterData = (districtId, date) => {
+    console.log(districtId)
     if(intervalId){
       clearInterval(intervalId)
     }
@@ -70,7 +71,7 @@ function App() {
     }
     setRequest({...request,lastRun:moment().format("DD-MM-YY, h:mm:ss a")})
       getCenter(districtId,date).then(data=> {
-        if(data.error){
+        if(data & data.error){
           setError("Unable to fetch Centers")
         }else{
           setCenters(data.centers)
@@ -83,7 +84,7 @@ function App() {
       //  I will run for every 15 minutes
       setRequest({...request,lastRun:moment().format("DD-MM-YY, h:mm:ss a")})
       getCenter(districtId,date).then(data=> {
-        if(data.error){
+        if(data & data.error){
           setError("Unable to fetch Centers")
         }else{
           setCenters(data.centers)
@@ -245,7 +246,7 @@ function App() {
     </Container>
     <footer className="fixed-bottom bg-warning p-1 text-center">
       <div className="row">
-      <div className="col-lg-6 col-sm-4 text-center">
+      <div className="col-lg-12 col-sm-12 text-center">
         <h5>Aditya Singhania <a href="http://www.linkedin.com/in/aditya-singhania-604681119" target="_blank"><IoLogoLinkedin color="#0e76a8" size="45"/></a></h5>
                 
       </div>
