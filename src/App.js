@@ -1,5 +1,5 @@
 import Form from 'react-bootstrap/Form'
-import { IoLogoLinkedin,IoAddCircle,IoHeartCircle,IoPhonePortraitOutline } from "react-icons/io5";
+import { IoLogoLinkedin,IoAddCircle} from "react-icons/io5";
 import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container';
 import useSound from 'use-sound'
@@ -195,22 +195,22 @@ function App() {
     return(
       <div key={index} className="border border-warning bg-warning rounded p-1 m-1">
         <div className="row">
-          <div className="col-7">
+          <div className="col-lg-7 col-sm-12">
           <h5 className="text-light">{Center.name}</h5>
           </div>
-          <div className={session.vaccine === "COVAXIN"?"col-2 bg-primary text-white text-center rounded":"col-2 bg-danger text-white rounded text-center"}>
+          <div className={session.vaccine === "COVAXIN"?"col-lg-2 col-sm-12 bg-primary text-white text-center rounded":"col-lg-2 col-sm-12 bg-danger text-white rounded text-center"}>
           {session.vaccine}
           </div>
-          <div className="col-2 offset-1 text-center rounded bg-white">
+          <div className="col-lg-2 col-sm-11 offset-1 text-center rounded bg-white">
           {session.min_age_limit}+yrs
           </div>
         </div>         
         <p>Address: {Center.address}</p>
         <div className="row m-1">
-          <div className="col-6 offset-3 text-center border border-success rounded bg-white">
+          <div className="col-lg-6 col-sm-8 text-center border border-success rounded bg-white">
           Available: {session.available_capacity} doses
           </div>
-          <div className="col-3">
+          <div className="col-lg-6 col-sm-4 text-center">
             {session.date}
             </div>              
         </div>
@@ -242,10 +242,10 @@ function App() {
     </Container>
     <footer className="fixed-bottom bg-warning p-1 text-center">
       <div className="row">
-      <div className="col-lg-6 col-sm-12 text-right">
+      <div className="col-lg-6 col-sm-12 text-center">
       <a href="https://www.cowin.gov.in/home" target="_blank" block className="btn btn-outline-danger"><IoAddCircle color="yellow" size="45"/> Go to Cowin</a>
       </div>
-      <div className="col-lg-6 col-sm-12 text-left">
+      <div className="col-lg-6 col-sm-12 text-center">
         <h5>Aditya Singhania</h5>
         <a href="http://www.linkedin.com/in/aditya-singhania-604681119" target="_blank"><IoLogoLinkedin color="#0e76a8" size="45"/></a>        
       </div>
