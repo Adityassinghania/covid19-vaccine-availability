@@ -228,6 +228,9 @@ function App() {
         <div className="col-lg-5 col-sm-12">
           <p>This tracker will check the vaccine availability every 30 mins for the entire week. Simply select your state and district similar to CoWin platform and click start!</p>
           {paramForm()}
+          <div className="col-lg-12 col-sm-12 text-center m-1">
+      <a href="https://www.cowin.gov.in/home" target="_blank" block className="btn btn-sm btn-outline-danger"><IoAddCircle color="yellow" size="45"/> Go to Cowin</a>
+      </div>
           {errorMessage()}
         </div>
           <div className="col-lg-7 col-sm-12 result">            
@@ -242,12 +245,9 @@ function App() {
     </Container>
     <footer className="fixed-bottom bg-warning p-1 text-center">
       <div className="row">
-      <div className="col-lg-6 col-sm-12 text-center">
-      <a href="https://www.cowin.gov.in/home" target="_blank" block className="btn btn-outline-danger"><IoAddCircle color="yellow" size="45"/> Go to Cowin</a>
-      </div>
-      <div className="col-lg-6 col-sm-12 text-center">
-        <h5>Aditya Singhania</h5>
-        <a href="http://www.linkedin.com/in/aditya-singhania-604681119" target="_blank"><IoLogoLinkedin color="#0e76a8" size="45"/></a>        
+      <div className="col-lg-6 col-sm-4 text-center">
+        <h5>Aditya Singhania <a href="http://www.linkedin.com/in/aditya-singhania-604681119" target="_blank"><IoLogoLinkedin color="#0e76a8" size="45"/></a></h5>
+                
       </div>
       </div>
       
