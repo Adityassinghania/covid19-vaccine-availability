@@ -173,10 +173,10 @@ function App() {
     var j = 0
       for(i=0 ; i < centers.length ; i++){        
         for(j=0 ; j < centers[i].sessions.length ; j++){          
-          if(centers[i].sessions[j].available_capacity > 0 && centers[i].sessions[j].min_age_limit === 45){
+          if(centers[i].sessions[j].available_capacity > 1 && centers[i].sessions[j].min_age_limit === 45){
             centersFor45.push({name:centers[i].name,address:centers[i].address, sessions:centers[i].sessions[j], pincode: centers[i].pincode})
           }
-          if(centers[i].sessions[j].available_capacity > 0 && centers[i].sessions[j].min_age_limit === 18){
+          if(centers[i].sessions[j].available_capacity > 1 && centers[i].sessions[j].min_age_limit === 18){
             centersFor18.push({name:centers[i].name,address:centers[i].address, sessions:centers[i].sessions[j], pincode: centers[i].pincode})
           }            
         }        
