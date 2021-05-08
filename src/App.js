@@ -74,9 +74,6 @@ function App() {
 
       setIntervalId(setInterval(function() {
         console.log("Selected district:",districtId)
-          if(intervalId){
-            clearInterval(intervalId)
-          }
           //  I will run for every 5 minutes
           setRequest({...request,lastRun:moment().format("DD-MM-YY, h:mm:ss a")})
           getCenter(districtId,date).then(data=> {
