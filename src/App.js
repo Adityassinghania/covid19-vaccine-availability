@@ -138,7 +138,7 @@ function App() {
           <div className="input-group rounded">
             <input type="search" className="form-control rounded" placeholder="ex: Nesco, nanavati" aria-label="Search" aria-describedby="search-addon" onChange={handleChange("alert")}/>
           </div>
-      <p>If there are multiple centers separate them using a comma(,).If your preffered center is availale an alarm will ring! <u>Note:You have to leave the tab open for alaram to ring</u></p>
+      <p>If there are multiple centers separate them using a comma(,).If your preferred center is available an alarm will ring! <u>Note:You have to leave the tab open for alaram to ring</u></p>
       <div className="row">
       <div className="col-5 text-center">
         <a href = "https://www.cowin.gov.in/home" target="_blank"className="btn btn-outline-danger"><IoAddCircle/> Go to Cowin</a>
