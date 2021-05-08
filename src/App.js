@@ -209,7 +209,7 @@ function App() {
             <div className="col-lg-7 col-sm-12">
             <h5 className="text-light">{center.name}</h5>
             </div>
-            <div className={center.sessions.vaccine === "COVAXIN"?"col-lg-3 col-sm-10 bg-primary text-white text-center rounded":"col-lg-3 col-10 offset-1 bg-danger text-white rounded text-center"}>
+            <div className={center.sessions.vaccine === "COVAXIN"?"col-lg-3 col-10 bg-primary text-white text-center rounded":"col-lg-3 col-10 offset-1 bg-danger text-white rounded text-center"}>
             {center.sessions.vaccine}
             </div>
           </div>         
