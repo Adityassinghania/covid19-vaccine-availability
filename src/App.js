@@ -74,6 +74,7 @@ function App() {
 
       setIntervalId(setInterval(function() {
         console.log("Selected district:",districtId)
+        setCenters([])
           //  I will run for every 5 minutes
           setRequest({...request,lastRun:moment().format("DD-MM-YY, h:mm:ss a")})
           getCenter(districtId,date).then(data=> {
