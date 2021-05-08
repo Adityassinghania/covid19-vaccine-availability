@@ -78,13 +78,15 @@ function App() {
           //  I will run for every 5 minutes
           setRequest({...request,lastRun:moment().format("DD-MM-YY, h:mm:ss a")})
           getCenter(districtId,date).then(data=> {
-            if(data & data.error){
-              setError("Unable to fetch Centers")
-            }else{
-              setCenters(data.centers)
-              filterCenters()
-              setError("")
-            }
+            if(data){
+              if(data.error){
+                setError("Unable to fetch Centers")
+              }else{
+                setCenters(data.centers)
+                filterCenters()
+                setError("")
+              }
+            }            
           }).catch(setError("Unable to fetch Centers"))
          }, 1 * 60 * 1000))
   }
