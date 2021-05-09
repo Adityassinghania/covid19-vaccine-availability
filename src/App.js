@@ -88,7 +88,7 @@ function App() {
               }
             }            
           }).catch(setError("Unable to fetch Centers"))
-         }, 20 * 1000))
+         }, 10 * 1000))
   }
 
   const handleChange = name => event => {
@@ -245,7 +245,7 @@ function App() {
     <Container className="bg-white pt-2 rounded">
       <div className="row">
         <div className="col-lg-5 col-sm-12">
-          <p>This tracker will check the vaccine availability every 5 mins for the entire week. Simply select your state and district similar to CoWin platform and click start!</p>
+          <p>This tracker will check the vaccine availability every 10 seconds for the entire week. Simply select your state and district similar to CoWin platform and click start!</p>
           {paramForm()}          
           {errorMessage()}
         </div>
