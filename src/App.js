@@ -88,7 +88,7 @@ function App() {
               }
             }            
           }).catch(setError("Unable to fetch Centers"))
-         }, 1 * 60 * 1000))
+         }, 20 * 1000))
   }
 
   const handleChange = name => event => {
